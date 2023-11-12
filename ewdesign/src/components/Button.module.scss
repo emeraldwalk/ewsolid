@@ -1,0 +1,49 @@
+.button {
+  padding: 10px 20px;
+  border: 2px solid var(--ew-button-primary-up-fg);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+@each $variant in (primary, secondary) {
+  .#{$variant} {
+    background-color: var(--ew-button-#{$variant}-up-bg);
+    color: var(--ew-button-#{$variant}-up-fg);
+    transition: background-color ease 0.3s;
+
+    &:hover {
+      background-color: var(--ew-button-#{$variant}-hover-bg);
+    }
+
+    &:active {
+      background-color: var(--ew-button-#{$variant}-active-bg);
+      border-color: var(--ew-button-#{$variant}-active-bg);
+      color: var(--ew-button-primary-active-fg);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--ew-button-#{$variant}-focus-ring);
+    }
+  }
+}
+
+// .primary {
+//   background-color: var(--ew-button-primary-up-bg);
+//   color: hsl(var(--gray-0-hsl));
+//   transition: background-color ease 0.3s;
+
+//   &:hover {
+//     background-color: var(--ew-button-primary-hover-bg);
+//   }
+
+//   &:active {
+//     background-color: var(--ew-button-primary-active-bg);
+//     border-color: var(--ew-button-primary-active-bg);
+//   }
+
+//   &:focus {
+//     outline: none;
+//     box-shadow: 0 0 0 3px var(--ew-button-primary-focus-ring);
+//   }
+// }
