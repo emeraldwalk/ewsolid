@@ -24,8 +24,10 @@ export default function Root() {
       </Head>
       <Body>
         <ErrorBoundary>
-          <A href="/">Index</A>
-          <A href="/rabbit-house">Rabbits</A>
+          <nav>
+            <A href="/">Home</A>
+            <A href="/rabbit-house">Rabbits</A>
+          </nav>
           <Suspense>
             <main>
               <Routes>
