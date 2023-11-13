@@ -1,27 +1,27 @@
 {
-  "_babylon.inspector.bundle.max-2dc17505.js": {
-    "file": "assets/babylon.inspector.bundle.max-2dc17505.js",
+  "_babylon.inspector.bundle.max-76b677dc.js": {
+    "file": "assets/babylon.inspector.bundle.max-76b677dc.js",
     "imports": [
-      "_rabbit-house-8dd92aa6.js"
+      "_rabbit-house-8aef15f8.js"
     ],
     "isDynamicEntry": true
   },
-  "_index-c1fc7244.js": {
-    "file": "assets/index-c1fc7244.js",
+  "_index-2505e641.js": {
+    "file": "assets/index-2505e641.js",
     "imports": [
       "src/entry-client.tsx"
     ]
   },
-  "_rabbit-house-8dd92aa6.js": {
+  "_rabbit-house-8aef15f8.js": {
     "css": [
       "assets/rabbit-house-e5d844b7.css"
     ],
     "dynamicImports": [
-      "_babylon.inspector.bundle.max-2dc17505.js"
+      "_babylon.inspector.bundle.max-76b677dc.js"
     ],
-    "file": "assets/rabbit-house-8dd92aa6.js",
+    "file": "assets/rabbit-house-8aef15f8.js",
     "imports": [
-      "_index-c1fc7244.js",
+      "_index-2505e641.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true
@@ -42,34 +42,34 @@
       "src/routes/[...404].mdx",
       "src/routes/docs.mdx",
       "src/routes/index.mdx",
-      "_rabbit-house-8dd92aa6.js"
+      "_rabbit-house-8aef15f8.js"
     ],
-    "file": "assets/entry-client-e0b71b1f.js",
+    "file": "assets/entry-client-c80d9108.js",
     "isEntry": true,
     "src": "src/entry-client.tsx"
   },
   "src/routes/[...404].mdx": {
-    "file": "assets/_...404_-caaec6fa.js",
+    "file": "assets/_...404_-88e3e857.js",
     "imports": [
-      "_index-c1fc7244.js",
+      "_index-2505e641.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/[...404].mdx"
   },
   "src/routes/docs.mdx": {
-    "file": "assets/docs-0e3c0634.js",
+    "file": "assets/docs-a7fecc34.js",
     "imports": [
-      "_index-c1fc7244.js",
+      "_index-2505e641.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/docs.mdx"
   },
   "src/routes/index.mdx": {
-    "file": "assets/index-54e4995d.js",
+    "file": "assets/index-8454fe2e.js",
     "imports": [
-      "_index-c1fc7244.js",
+      "_index-2505e641.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
