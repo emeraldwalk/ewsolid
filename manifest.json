@@ -1,0 +1,78 @@
+{
+  "_babylon.inspector.bundle.max-2dc17505.js": {
+    "file": "assets/babylon.inspector.bundle.max-2dc17505.js",
+    "imports": [
+      "_rabbit-house-8dd92aa6.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "_index-c1fc7244.js": {
+    "file": "assets/index-c1fc7244.js",
+    "imports": [
+      "src/entry-client.tsx"
+    ]
+  },
+  "_rabbit-house-8dd92aa6.js": {
+    "css": [
+      "assets/rabbit-house-e5d844b7.css"
+    ],
+    "dynamicImports": [
+      "_babylon.inspector.bundle.max-2dc17505.js"
+    ],
+    "file": "assets/rabbit-house-8dd92aa6.js",
+    "imports": [
+      "_index-c1fc7244.js",
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true
+  },
+  "rabbit-house.css": {
+    "file": "assets/rabbit-house-e5d844b7.css",
+    "src": "rabbit-house.css"
+  },
+  "src/entry-client.css": {
+    "file": "assets/entry-client-1f0ae202.css",
+    "src": "src/entry-client.css"
+  },
+  "src/entry-client.tsx": {
+    "css": [
+      "assets/entry-client-1f0ae202.css"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].mdx",
+      "src/routes/docs.mdx",
+      "src/routes/index.mdx",
+      "_rabbit-house-8dd92aa6.js"
+    ],
+    "file": "assets/entry-client-e0b71b1f.js",
+    "isEntry": true,
+    "src": "src/entry-client.tsx"
+  },
+  "src/routes/[...404].mdx": {
+    "file": "assets/_...404_-caaec6fa.js",
+    "imports": [
+      "_index-c1fc7244.js",
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/[...404].mdx"
+  },
+  "src/routes/docs.mdx": {
+    "file": "assets/docs-0e3c0634.js",
+    "imports": [
+      "_index-c1fc7244.js",
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/docs.mdx"
+  },
+  "src/routes/index.mdx": {
+    "file": "assets/index-54e4995d.js",
+    "imports": [
+      "_index-c1fc7244.js",
+      "src/entry-client.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/index.mdx"
+  }
+}

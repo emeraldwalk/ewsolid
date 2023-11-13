@@ -1,0 +1,127 @@
+{
+  "/*404": {
+    "type": "route",
+    "script": {
+      "type": "script",
+      "href": "/assets/_...404_-caaec6fa.js"
+    },
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/_...404_-caaec6fa.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/index-c1fc7244.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-e0b71b1f.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-1f0ae202.css"
+      }
+    ]
+  },
+  "/docs": {
+    "type": "route",
+    "script": {
+      "type": "script",
+      "href": "/assets/docs-0e3c0634.js"
+    },
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/docs-0e3c0634.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/index-c1fc7244.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-e0b71b1f.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-1f0ae202.css"
+      }
+    ]
+  },
+  "/": {
+    "type": "route",
+    "script": {
+      "type": "script",
+      "href": "/assets/index-54e4995d.js"
+    },
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/index-54e4995d.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/index-c1fc7244.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-e0b71b1f.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-1f0ae202.css"
+      }
+    ]
+  },
+  "/rabbit-house": {
+    "type": "route",
+    "script": {
+      "type": "script",
+      "href": "/assets/rabbit-house-8dd92aa6.js"
+    },
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/rabbit-house-8dd92aa6.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/index-c1fc7244.js"
+      },
+      {
+        "type": "script",
+        "href": "/assets/entry-client-e0b71b1f.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-1f0ae202.css"
+      },
+      {
+        "type": "style",
+        "href": "/assets/rabbit-house-e5d844b7.css"
+      }
+    ]
+  },
+  "entry-client": {
+    "type": "entry",
+    "script": {
+      "type": "script",
+      "href": "/assets/entry-client-e0b71b1f.js"
+    },
+    "assets": [
+      {
+        "type": "script",
+        "href": "/assets/entry-client-e0b71b1f.js"
+      },
+      {
+        "type": "style",
+        "href": "/assets/entry-client-1f0ae202.css"
+      }
+    ]
+  },
+  "index.html": {
+    "type": "entry",
+    "assets": []
+  }
+}
