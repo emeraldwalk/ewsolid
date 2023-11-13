@@ -1,0 +1,1 @@
+import{M as r}from"./index-6cda8428.js";import{c as e,m as c}from"./entry-client-9ef952eb.js";function o(n){const t=Object.assign({h1:"h1"},r(),n.components);return e(t.h1,{children:"Emeraldwalk Building"})}function i(n={}){const{wrapper:t}=Object.assign({},r(),n.components);return t?e(t,c(n,{get children(){return e(o,n)}})):o(n)}export{i as default};

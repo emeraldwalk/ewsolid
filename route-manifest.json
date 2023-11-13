@@ -3,24 +3,24 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/ewsolid/assets/_...404_-c5438ef9.js"
+      "href": "/ewsolid/assets/_...404_-5dd3b99c.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/ewsolid/assets/_...404_-c5438ef9.js"
+        "href": "/ewsolid/assets/_...404_-5dd3b99c.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/index-f49e038d.js"
+        "href": "/ewsolid/assets/index-6cda8428.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+        "href": "/ewsolid/assets/entry-client-9ef952eb.js"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/entry-client-92d5f33d.css"
+        "href": "/ewsolid/assets/entry-client-435fbc1c.css"
       }
     ]
   },
@@ -28,24 +28,24 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/ewsolid/assets/docs-e63462b4.js"
+      "href": "/ewsolid/assets/docs-b8fa32cc.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/ewsolid/assets/docs-e63462b4.js"
+        "href": "/ewsolid/assets/docs-b8fa32cc.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/index-f49e038d.js"
+        "href": "/ewsolid/assets/index-6cda8428.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+        "href": "/ewsolid/assets/entry-client-9ef952eb.js"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/entry-client-92d5f33d.css"
+        "href": "/ewsolid/assets/entry-client-435fbc1c.css"
       }
     ]
   },
@@ -53,53 +53,53 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/ewsolid/assets/index-f7284180.js"
+      "href": "/ewsolid/assets/index-73979f6f.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/ewsolid/assets/index-f7284180.js"
+        "href": "/ewsolid/assets/index-73979f6f.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/index-f49e038d.js"
+        "href": "/ewsolid/assets/index-6cda8428.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+        "href": "/ewsolid/assets/entry-client-9ef952eb.js"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/entry-client-92d5f33d.css"
+        "href": "/ewsolid/assets/entry-client-435fbc1c.css"
       }
     ]
   },
-  "/rabbit-house": {
+  "/scene/:id": {
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/ewsolid/assets/rabbit-house-3f2d0799.js"
+      "href": "/ewsolid/assets/_id_-9074e814.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/ewsolid/assets/rabbit-house-3f2d0799.js"
+        "href": "/ewsolid/assets/_id_-9074e814.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/index-f49e038d.js"
+        "href": "/ewsolid/assets/index-6cda8428.js"
       },
       {
         "type": "script",
-        "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+        "href": "/ewsolid/assets/entry-client-9ef952eb.js"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/entry-client-92d5f33d.css"
+        "href": "/ewsolid/assets/entry-client-435fbc1c.css"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/rabbit-house-337a1c9b.css"
+        "href": "/ewsolid/assets/_id_-e5d844b7.css"
       }
     ]
   },
@@ -107,16 +107,16 @@
     "type": "entry",
     "script": {
       "type": "script",
-      "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+      "href": "/ewsolid/assets/entry-client-9ef952eb.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/ewsolid/assets/entry-client-7b6f6496.js"
+        "href": "/ewsolid/assets/entry-client-9ef952eb.js"
       },
       {
         "type": "style",
-        "href": "/ewsolid/assets/entry-client-92d5f33d.css"
+        "href": "/ewsolid/assets/entry-client-435fbc1c.css"
       }
     ]
   },
