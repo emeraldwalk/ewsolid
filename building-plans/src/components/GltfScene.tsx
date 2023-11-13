@@ -1,16 +1,15 @@
 import { onMount } from 'solid-js'
 import { loadGltf } from '../utils'
 import styles from './GltfScene.module.scss'
+import { useParams } from 'solid-start'
 
-export interface GltfSceneProps {
-  path: string
-}
-
-export function GltfScene({ path }: GltfSceneProps) {
+export function GltfScene() {
   let canvas: HTMLCanvasElement
 
+  const params = useParams<{ id: string }>()
+
   onMount(() => {
-    loadGltf(canvas, path)
+    loadGltf(canvas, `${params.id}.glb`)
   })
 
   return <canvas class={styles.canvas} ref={canvas!}></canvas>

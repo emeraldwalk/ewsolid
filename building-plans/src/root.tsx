@@ -12,6 +12,7 @@ import {
   Routes,
   Scripts,
   Title,
+  useLocation,
 } from 'solid-start'
 import './root.css'
 
@@ -30,7 +31,7 @@ export default function Root() {
         <ErrorBoundary>
           <nav>
             <A href={BASE_URL}>Home</A>
-            <A href={`${BASE_URL}rabbit-house`}>Rabbits</A>
+            <A href={`${BASE_URL}scene/rabbit-house`}>Rabbits</A>
           </nav>
           <Suspense>
             <main>

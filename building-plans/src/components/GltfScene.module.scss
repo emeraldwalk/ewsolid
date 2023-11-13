@@ -1,5 +1,5 @@
 .canvas {
-  margin: calc(0px - var(--main-padding));
+  // margin: calc(0px - var(--main-padding));
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - var(--nav-primary-height));
 }

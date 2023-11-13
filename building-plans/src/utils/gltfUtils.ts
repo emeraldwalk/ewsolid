@@ -10,13 +10,15 @@ import {
 } from '@babylonjs/core'
 import '@babylonjs/loaders'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 export function loadGltf(canvasEl: HTMLCanvasElement, gltfPath: string) {
   // initialize babylon scene and engine
   const engine = new Engine(canvasEl, true)
   const scene = new Scene(engine)
 
   SceneLoader.Append(
-    'scenes/',
+    `${BASE_URL}scenes/`,
     gltfPath,
     scene,
     undefined,
