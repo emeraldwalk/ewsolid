@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "_root"
+		},
+		{
+			"path": "building-plans"
+		},
+		{
+			"path": "ewdesign"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "building-plans",
+		"liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+		"liveServer.settings.root": "dist/public",
+	}
+}

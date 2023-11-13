@@ -1,4 +1,4 @@
-import '@babylonjs/core/Debug/debugLayer'
+import('@babylonjs/core/Debug/debugLayer')
 import('@babylonjs/inspector')
 import {
   Engine,
@@ -6,8 +6,6 @@ import {
   ArcRotateCamera,
   Vector3,
   HemisphericLight,
-  Mesh,
-  MeshBuilder,
   SceneLoader,
 } from '@babylonjs/core'
 import '@babylonjs/loaders'

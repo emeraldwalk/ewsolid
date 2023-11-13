@@ -1,4 +1,5 @@
 import solid from 'solid-start/vite'
+import staticAdapter from 'solid-start-static'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
       enforce: 'pre',
     },
     solid({
+      adapter: staticAdapter(),
       extensions: ['.mdx', '.md'],
     }),
   ],
