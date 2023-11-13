@@ -1,18 +1,29 @@
 :root {
   --nav-primary-height: 40px;
+  --color-nav-primary-bg: hwb(0deg 100% 0%);
   --space-8: 8px;
+  --color-body-fg: hwb(0deg 100% 0%);
+  --color-body-bg: hwb(240deg 20% 70.2%);
+  --main-padding: var(--space-8);
 }
 
 body {
+  background-color: var(--color-body-bg);
+  color: var(--color-body-fg);
   font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   margin: 0;
 }
 
 nav {
+  background-color: var(--color-nav-primary-bg);
   display: flex;
   align-items: center;
   gap: var(--space-8);
   padding: 0 var(--space-8);
   height: var(--nav-primary-height);
+}
+
+main {
+  padding: var(--main-padding);
 }

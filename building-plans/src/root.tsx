@@ -7,6 +7,7 @@ import {
   FileRoutes,
   Head,
   Html,
+  Link,
   Meta,
   Routes,
   Scripts,
@@ -20,9 +21,10 @@ export default function Root() {
   return (
     <Html lang="en">
       <Head>
-        <Title>SolidStart - With MDX</Title>
+        <Title>Emeraldwalk - Building</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Link rel="icon" href={`${BASE_URL}icons/icon-48x48.png`} />
       </Head>
       <Body>
         <ErrorBoundary>
