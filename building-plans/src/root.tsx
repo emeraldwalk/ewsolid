@@ -31,6 +31,7 @@ export default function Root() {
         <ErrorBoundary>
           <nav>
             <A href={BASE_URL}>Home</A>
+            <A href={`${BASE_URL}palette`}>Palette</A>
             <A href={`${BASE_URL}scene/rabbit-house`}>Rabbits</A>
           </nav>
           <Suspense>
