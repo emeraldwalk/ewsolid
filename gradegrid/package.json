@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "db": "./db/pocketbase serve"
+    "serve": "./server/server serve",
+    "server:devbuild": "cd server && CGO_ENABLED=0 go build",
+    "server:dev": "cd server && go run main.go serve"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",

@@ -1,3 +1,18 @@
+# GradeGrid
+
+## Pocketbase
+
+Pocketbase custom GO file that can serve the astro app
+
+- https://pocketbase.io/docs/go-overview/
+- https://rodydavis.com/posts/astro-ssr-pocketbase-single-server
+
+## Docker
+
+https://rodydavis.com/posts/astro-ssr-pocketbase-single-server
+
+---
+
 # Astro Starter Kit: Basics
 
 ```sh

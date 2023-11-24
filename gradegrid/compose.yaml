@@ -1,0 +1,16 @@
+services:
+  db:
+    build:
+      context: server
+    ports:
+      - 8080:8080
+    restart: always
+    environment:
+      - ASTRO_HOST=astro:4321
+    volumes:
+      - ./server/pb_data:/pb_data
+  astro:
+    build:
+      context: .
+    # ports:
+    #   - 4321:4321
