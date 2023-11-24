@@ -1,23 +1,35 @@
 ---
 import PocketBase from 'pocketbase'
 import Layout from '../layouts/Layout.astro'
+import { SESSION_COOKIE_KEY } from '../config'
 
 if (Astro.request.method === 'POST') {
   try {
     const data = await Astro.request.formData()
 
     const pb = new PocketBase('http://127.0.0.1:8090')
-    pb.authStore.clear() // may not be necessary on server?
+    // pb.authStore.clear() // may not be necessary on server?
 
     const email = (data.get('email') ?? '') as string
     const password = (data.get('password') ?? '') as string
 
-    pb.collection('users').authWithPassword(email, password)
+    await pb.collection('users').authWithPassword(email, password)
 
     const cookie = pb.authStore.exportToCookie()
 
-    Astro.cookies.set('session', cookie)
-  } catch {}
+    const [, session = '', expires = ''] =
+      /^pb_auth=(.*?);.*?Expires=(.*?);/.exec(decodeURIComponent(cookie)) ?? []
+
+    // console.log('cookie:', session)
+
+    Astro.cookies.set(SESSION_COOKIE_KEY, session, {
+      sameSite: 'strict',
+      secure: true,
+      expires: new Date(expires),
+    })
+  } catch (err) {
+    console.error(err)
+  }
 }
 ---
 

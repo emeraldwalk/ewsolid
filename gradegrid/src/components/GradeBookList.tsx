@@ -1,27 +1,19 @@
-import PocketBase from 'pocketbase'
-import { For } from 'solid-js'
+import { For, lazy } from 'solid-js'
+import { listGradeBooks } from '../utils'
 
-const pb = new PocketBase('http://127.0.0.1:8090')
+export const GradeBookList = lazy(async () => {
+  const gradeBookList = await listGradeBooks()
 
-
-// fetch a paginated records list
-const resultList = await pb.collection('gradebooks').getList(1, 50, {
-  filter: `created >= "2022-01-01 00:00:00" && name != 'someField2'`,
+  return {
+    default: function GradeBookList() {
+      return (
+        <div>
+          <ul>
+            Gradebooks
+            <For each={gradeBookList}>{({ name }) => <li>{name}</li>}</For>
+          </ul>
+        </div>
+      )
+    },
+  }
 })
-
-console.log(resultList.items)
-
-// // you can also fetch all records at once via getFullList
-// const records = await pb.collection('gradebooks').getFullList({
-//   sort: '-created',
-// })
-
-export function GradeBookList() {
-  return (
-    <div>
-      <ul>
-        <For each={resultList.items}>{({ name }) => <li>{name}</li>}</For>
-      </ul>
-    </div>
-  )
-}
