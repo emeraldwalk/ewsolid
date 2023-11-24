@@ -1,0 +1,19 @@
+---
+export const prerender = false
+
+import Layout from '../layouts/Layout.astro'
+import { GradeBookList } from '../components'
+
+let counter = 0
+
+if (Astro.cookies.has('counter')) {
+  const cookie = Astro.cookies.get('counter')!
+  counter = cookie.number() + 1
+}
+
+Astro.cookies.set('counter', String(counter))
+---
+
+<Layout title="Gradebooks | GradeGrid">
+  <main><GradeBookList client:load /></main>
+</Layout>

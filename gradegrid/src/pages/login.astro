@@ -1,0 +1,38 @@
+---
+import PocketBase from 'pocketbase'
+import Layout from '../layouts/Layout.astro'
+
+if (Astro.request.method === 'POST') {
+  try {
+    const data = await Astro.request.formData()
+
+    const pb = new PocketBase('http://127.0.0.1:8090')
+    pb.authStore.clear() // may not be necessary on server?
+
+    const email = (data.get('email') ?? '') as string
+    const password = (data.get('password') ?? '') as string
+
+    pb.collection('users').authWithPassword(email, password)
+
+    const cookie = pb.authStore.exportToCookie()
+
+    Astro.cookies.set('session', cookie)
+  } catch {}
+}
+---
+
+<Layout title="Gradebooks | GradeGrid">
+  <form method="POST">
+    <label>Email</label>
+    <input name="email" type="email" />
+    <label>Password</label>
+    <input name="password" type="password" />
+    <button>Sign In</button>
+  </form>
+</Layout>
+
+<style>
+  form {
+    display: grid;
+  }
+</style>

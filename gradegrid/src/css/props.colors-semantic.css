@@ -1,0 +1,23 @@
+:where(html) {
+  --ew-black: hsl(var(--gray-8-hsl));
+  --ew-white: hsl(var(--gray-1-hsl));
+
+  --ew-fg: var(--ew-white);
+  --ew-bg: #13151a;
+
+  --ew-button-primary-up-fg: hsl(var(--ew-white));
+  --ew-button-primary-active-fg: hsl(var(--ew-white));
+  --ew-button-primary-up-bg: hsl(var(--green-8-hsl));
+  --ew-button-primary-hover-bg: hsl(var(--green-9-hsl));
+  --ew-button-primary-active-bg: hsl(var(--green-10-hsl));
+  --ew-button-primary-focus-bg: hsl(var(--green-10-hsl));
+  --ew-button-primary-focus-ring: hsla(var(--green-10-hsl) / 0.5);
+
+  --ew-button-secondary-up-fg: hsl(var(--ew-black));
+  --ew-button-secondary-active-fg: hsl(var(--ew-white));
+  --ew-button-secondary-up-bg: hsl(var(--orange-8-hsl));
+  --ew-button-secondary-hover-bg: hsl(var(--orange-9-hsl));
+  --ew-button-secondary-active-bg: hsl(var(--orange-10-hsl));
+  --ew-button-secondary-focus-bg: hsl(var(--orange-10-hsl));
+  --ew-button-secondary-focus-ring: hsla(var(--orange-10-hsl) / 0.5);
+}

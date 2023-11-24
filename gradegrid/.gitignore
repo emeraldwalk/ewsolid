@@ -1,3 +1,5 @@
+db/
+
 # build output
 dist/
 
