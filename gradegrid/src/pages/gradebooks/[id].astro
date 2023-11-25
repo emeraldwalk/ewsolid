@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { GradeBookDetail } from '../../components'
+
+const { id = '' } = Astro.params
+---
+
+<Layout title="Gradebook | GradeGrid">
+  <main>
+    <GradeBookDetail id={id} client:only />
+  </main>
+</Layout>

@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { SESSION_COOKIE_KEY } from '../config'
+
+Astro.cookies.delete(SESSION_COOKIE_KEY)
+---
+
+<Layout title="Gradebooks | GradeGrid">
+  <main>Signed out</main>
+</Layout>

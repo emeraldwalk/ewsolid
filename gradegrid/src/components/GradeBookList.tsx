@@ -10,7 +10,13 @@ export const GradeBookList = lazy(async () => {
         <div>
           <ul>
             Gradebooks
-            <For each={gradeBookList}>{({ name }) => <li>{name}</li>}</For>
+            <For each={gradeBookList}>
+              {({ id, name }) => (
+                <li>
+                  <a href={`/gradebooks/${id}`}>{name}</a>
+                </li>
+              )}
+            </For>
           </ul>
         </div>
       )

@@ -1,7 +1,7 @@
 ---
 import PocketBase from 'pocketbase'
 import Layout from '../layouts/Layout.astro'
-import { SESSION_COOKIE_KEY } from '../config'
+import { SESSION_COOKIE_EXP_KEY, SESSION_COOKIE_KEY } from '../config'
 
 if (Astro.request.method === 'POST') {
   try {
@@ -17,18 +17,31 @@ if (Astro.request.method === 'POST') {
 
     const cookie = pb.authStore.exportToCookie()
 
-    const [, session = '', expires = ''] =
+    const [, session = '', expiresStr = ''] =
       /^pb_auth=(.*?);.*?Expires=(.*?);/.exec(decodeURIComponent(cookie)) ?? []
 
-    // console.log('cookie:', session)
-
-    Astro.cookies.set(SESSION_COOKIE_KEY, session, {
+    const cookieCommon = {
       sameSite: 'strict',
       secure: true,
-      expires: new Date(expires),
-    })
+      expires: new Date(expiresStr),
+    } as const
+
+    Astro.cookies.set(SESSION_COOKIE_KEY, session, cookieCommon)
+
+    Astro.cookies.set(
+      SESSION_COOKIE_EXP_KEY,
+      String(cookieCommon.expires.valueOf()),
+      {
+        ...cookieCommon,
+        httpOnly: true,
+      },
+    )
+
+    return Astro.redirect('/')
   } catch (err) {
     console.error(err)
+    Astro.cookies.delete(SESSION_COOKIE_KEY)
+    Astro.cookies.delete(SESSION_COOKIE_EXP_KEY)
   }
 }
 ---
@@ -36,7 +49,7 @@ if (Astro.request.method === 'POST') {
 <Layout title="Gradebooks | GradeGrid">
   <form method="POST">
     <label>Email</label>
-    <input name="email" type="email" />
+    <input name="email" type="email" autofocus />
     <label>Password</label>
     <input name="password" type="password" />
     <button>Sign In</button>
