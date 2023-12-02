@@ -18,5 +18,11 @@
 		"liveServer.settings.multiRootWorkspaceName": "building-plans",
 		"liveServer.settings.AdvanceCustomBrowserCmdLine": "",
 		"liveServer.settings.root": "dist/public",
+		"liveServer.settings.mount": [
+			[
+				"/ewsolid/",
+				"dist/public"
+			]
+		]
 	}
 }
