@@ -1,22 +1,22 @@
 {
-  "__id_-1c656008.js": {
+  "__id_-bcccae68.js": {
     "css": [
       "assets/_id_-e5d844b7.css"
     ],
     "dynamicImports": [
-      "_babylon.inspector.bundle.max-5f879967.js"
+      "_babylon.inspector.bundle.max-365486bf.js"
     ],
-    "file": "assets/_id_-1c656008.js",
+    "file": "assets/_id_-bcccae68.js",
     "imports": [
-      "_index-482d182b.js",
+      "_index-f84b64f9.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true
   },
-  "_babylon.inspector.bundle.max-5f879967.js": {
-    "file": "assets/babylon.inspector.bundle.max-5f879967.js",
+  "_babylon.inspector.bundle.max-365486bf.js": {
+    "file": "assets/babylon.inspector.bundle.max-365486bf.js",
     "imports": [
-      "__id_-1c656008.js"
+      "__id_-bcccae68.js"
     ],
     "isDynamicEntry": true
   },
@@ -24,8 +24,8 @@
     "file": "assets/_id_-e5d844b7.css",
     "src": "_id_.css"
   },
-  "_index-482d182b.js": {
-    "file": "assets/index-482d182b.js",
+  "_index-f84b64f9.js": {
+    "file": "assets/index-f84b64f9.js",
     "imports": [
       "src/entry-client.tsx"
     ]
@@ -43,34 +43,34 @@
       "src/routes/docs.mdx",
       "src/routes/index.mdx",
       "src/routes/palette.tsx",
-      "__id_-1c656008.js"
+      "__id_-bcccae68.js"
     ],
-    "file": "assets/entry-client-4a4af5bc.js",
+    "file": "assets/entry-client-e5fe68eb.js",
     "isEntry": true,
     "src": "src/entry-client.tsx"
   },
   "src/routes/[...404].mdx": {
-    "file": "assets/_...404_-c4ab28a5.js",
+    "file": "assets/_...404_-f748d170.js",
     "imports": [
-      "_index-482d182b.js",
+      "_index-f84b64f9.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/[...404].mdx"
   },
   "src/routes/docs.mdx": {
-    "file": "assets/docs-d7fe407c.js",
+    "file": "assets/docs-de099abf.js",
     "imports": [
-      "_index-482d182b.js",
+      "_index-f84b64f9.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/docs.mdx"
   },
   "src/routes/index.mdx": {
-    "file": "assets/index-274f5adc.js",
+    "file": "assets/index-f338b72e.js",
     "imports": [
-      "_index-482d182b.js",
+      "_index-f84b64f9.js",
       "src/entry-client.tsx"
     ],
     "isDynamicEntry": true,
@@ -84,7 +84,7 @@
     "css": [
       "assets/palette-a0d52a33.css"
     ],
-    "file": "assets/palette-a2fce32e.js",
+    "file": "assets/palette-c7dd2a4c.js",
     "imports": [
       "src/entry-client.tsx"
     ],
