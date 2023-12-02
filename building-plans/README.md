@@ -1,3 +1,7 @@
+# Building Plans
+
+GH Pages https://emeraldwalk.github.io/ewsolid/
+
 # SolidStart
 
 Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);

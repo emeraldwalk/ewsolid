@@ -3,7 +3,7 @@ import staticAdapter from 'solid-start-static'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/ewsolid/',
+  base: 'https://emeraldwalk.github.io/ewsolid/',
   plugins: [
     {
       ...(await import('@mdx-js/rollup')).default({
